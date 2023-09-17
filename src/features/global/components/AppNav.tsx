@@ -1,5 +1,4 @@
-import { DashboardIcon, ColorWheelIcon, VideoIcon } from '@radix-ui/react-icons';
-import { useParams } from 'next/navigation';
+import { DashboardIcon, ColorWheelIcon, VideoIcon, RocketIcon } from '@radix-ui/react-icons';
 import NavLink from '@/features/global/components/NavLink';
 
 const AppNav = () => {
@@ -18,6 +17,11 @@ const AppNav = () => {
       href: '/movies',
       title: 'Movies',
       icon: <VideoIcon />
+    },
+    {
+      href: '/playground',
+      title: 'Playground',
+      icon: <RocketIcon />
     }
   ];
 

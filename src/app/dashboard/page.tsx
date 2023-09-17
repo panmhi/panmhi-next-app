@@ -1,5 +1,7 @@
-import React from 'react';
-
 export default function DashboardPage() {
-  return <div>Dashboard page</div>;
+  return (
+    <div className='py-12'>
+      <div className='container'>Dashborad page</div>
+    </div>
+  );
 }

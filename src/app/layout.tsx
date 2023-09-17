@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import '@/app/globals.css';
 import AppSideBar from '@/features/global/components/AppSideBar';
 import ThemeProvider from '@/features/global/contexts/ThemeContext';
 import AppToolBar from '@/features/global/components/AppToolBar';
