@@ -1,3 +1,4 @@
+'use server';
 import { getMoviesByGenreFetcher } from '../fetchers/movies-fetchers';
 
 export const getMoviesByGenre = async (genre: string, page: number) => {

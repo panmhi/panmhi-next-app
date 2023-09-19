@@ -9,6 +9,9 @@ const nextConfig = {
         pathname: '/t/p/w500/**'
       }
     ]
+  },
+  experimental: {
+    serverActions: true
   }
 };
 
