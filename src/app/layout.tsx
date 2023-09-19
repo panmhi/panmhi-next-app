@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import '@/app/globals.css';
+import './globals.css'; // relative path is used to solve the preload link issue, for details see https://github.com/vercel/next.js/discussions/49607
 import AppSideBar from '@/features/global/components/AppSideBar';
 import ThemeProvider from '@/features/global/contexts/ThemeContext';
 import AppToolBar from '@/features/global/components/AppToolBar';

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import dayjs from 'dayjs';
 
-export default function MoiveList({ movies }: { movies: Record<string, any>[] }) {
+const MoiveList = ({ movies }: { movies: Record<string, any>[] }) => {
   return (
     <ul
       role='list'
@@ -27,4 +27,6 @@ export default function MoiveList({ movies }: { movies: Record<string, any>[] })
       ))}
     </ul>
   );
-}
+};
+
+export default MoiveList;
