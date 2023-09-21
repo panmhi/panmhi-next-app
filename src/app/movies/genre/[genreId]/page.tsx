@@ -31,8 +31,8 @@ type MovieGenrePageProps = {
   c) it has data that is not static
 */
 /* 
-  Suspense boundary is not working by default becuase of 
-  the Router Cache behavior in Next.js. 
+  Suspense boundary is not working by default not because it needs to be dynamically renderd,
+  but becuase of the Router Cache behavior in Next.js. 
   We fix this by adding a key attribute to the Page component, 
   the updated key forces Next.js to send request to get an updated page each time,
   which in turns calls the Suspense and shows the loading effect.

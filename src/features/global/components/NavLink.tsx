@@ -16,7 +16,7 @@ const NavLink = ({ vertical = false, href, title, alias, icon }: SidebarLinkProp
   const pathname = usePathname();
 
   const navLinkDefaultStyles =
-    'flex justify-start items-center transition-colors text-foreground/60 hover:text-foreground/80';
+    'flex w-28 justify-start items-center transition-colors text-foreground/60 hover:text-foreground/80';
 
   return (
     <Link
@@ -29,7 +29,7 @@ const NavLink = ({ vertical = false, href, title, alias, icon }: SidebarLinkProp
       )}
     >
       {icon && <div className='flex h-8 w-8 scale-125 items-center justify-center'>{icon}</div>}
-      <span className='whitespace-nowrap text-sm'>{title}</span>
+      <span className=' text-center text-sm'>{title}</span>
     </Link>
   );
 };
